@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+}
+.container {
+  max-width: 760px;
+  margin: 30px auto;
+}
+.box {
+  background: #f4f4f4;
+  border: 1px solid #333;
+  margin: 20px;
+  padding: 15px;
+}
+.box p {
+  /* Text align */
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+}
+#box-2 {
+  float: left;
+  width: 58%;
+}
+#box-3 {
+  float: right;
+  width: 30%;
+}
+.clr {
+  clear: both;
+}
