@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        // Map options
+        var options = {
+          center: { lat: 25.0826, lng: 55.1715 }, // Set the desired center coordinates
+          zoom: 14, // Set the desired zoom level
+          styles: [
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }], // Hide points of interest labels
+            },
+            {
+              featureType: "road",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }], // Hide road labels
+            },
+            {
+              featureType: "transit",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }], // Hide transit labels
+            },
+            {
+              featureType: "administrative",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#ffffff" }], // Set administrative labels color
+            },
+            {
+              featureType: "landscape",
+              elementType: "geometry",
+              stylers: [{ color: "#f5f5f5" }], // Set landscape color
+            },
+            {
+              featureType: "poi.park",
+              elementType: "geometry",
+              stylers: [{ color: "#c8e6c9" }], // Set park color
+            },
+            {
+              featureType: "water",
+              elementType: "geometry",
+              stylers: [{ color: "#b3e5fc" }], // Set water color
+            },
+          ],
+        };
+
+        // Create the map
+        var map = new google.maps.Map(document.getElementById("map"), options);
+      }
+    </script>
+
+    <!-- Include the Google Maps JavaScript API with your API key -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAv_ztioVUu4h20b_Z8U0bWzJIDIlM6ic&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

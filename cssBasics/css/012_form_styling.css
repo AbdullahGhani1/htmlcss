@@ -69,13 +69,16 @@ footer p a {
 }
 @media screen and (max-width: 480px) {
   #container {
-    width: 90vw;
+    width: 100vw;
     margin: 20px;
+  }
+  .form-wrap {
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
   #container {
-    width: 60vw;
-    margin: 20px;
+    width: 100vw;
+    margin: 20px auto;
   }
 }
