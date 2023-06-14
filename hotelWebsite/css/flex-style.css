@@ -77,11 +77,12 @@ li {
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: ;
+  color: var(--text-light);
   background: #333;
   padding: 13px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
 }
 .btn:hover {
   color: #f7c08a;
@@ -102,6 +103,12 @@ li {
   background: #f7c08a;
 }
 
+.bg-dark {
+  background: #2a2a2a;
+}
+.bg-light {
+  background: #fff;
+}
 /* End Utility Classes */
 
 /* Navbar */
@@ -314,7 +321,7 @@ li {
 }
 
 /* contact us */
-form {
+#contact-form form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -322,29 +329,34 @@ form {
   width: 90vw;
   height: 60vh;
 }
-form label {
-  display: inline-block;
+#contact-form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-form input {
+#contact-form input,
+#contact-form textarea {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 10px;
   border-radius: 4px;
-  border: 1px solid #333;
+  border: 1px solid #ddd;
   width: 100%;
 }
-.contact-us {
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+#contact-info {
   overflow: hidden;
-  background: #2a2a2a;
-  color: white;
+  color: #fff;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
-}
-form textarea {
-  display: inline-block;
-  padding: 12px 20px;
-  width: 100%;
-  margin-bottom: 30px;
 }
 
 /* footer */
@@ -384,7 +396,10 @@ footer {
   #testimonial ul li {
     flex-direction: row;
   }
-  form textarea {
+  #contact-form input {
+    width: 80%;
+  }
+  #contact-form textarea {
     width: 50%;
   }
 }
