@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background: url("./images/gilgit.jpg") no-repeat center center/cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      #time-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      #time {
+        font-size: 6rem;
+        color: #fff;
+        font-weight: bold;
+      }
+      #greet {
+        font-size: 3rem;
+        color: #fff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="container">
+        <div id="time-container">
+          <span id="time"></span>
+          <span id="greet"> </span>
+        </div>
+      </section>
+    </main>
+    <script defer>
+      function updateClock() {
+        var now = new Date();
+        var options = {
+          timeZone: "Asia/Karachi",
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        };
+        var timestring = now.toLocaleTimeString("en-us", options);
+        document.getElementById("time").textContent = timestring;
+      }
+
+      function greeting() {
+        var now = new Date();
+        var hour = now.getHours();
+        console.log("hour", hour);
+        var greeting;
+        if (hour >= 5 && hour < 12) {
+          greeting = "Good Morning";
+        } else if (hour >= 12 && hour < 17) {
+          greeting = "Good Afternoon";
+        } else if (hour >= 17 && hour < 20) {
+          greeting = "Good Evening";
+        } else {
+          greeting = "Good Night";
+        }
+        document.getElementById("greet").textContent = greeting + " Abdullah";
+      }
+      setInterval(updateClock, 1000);
+      setInterval(greeting, 1000);
+    </script>
+  </body>
+</html>
