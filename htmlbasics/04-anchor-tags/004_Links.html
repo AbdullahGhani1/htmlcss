@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links & Images</title>
+  </head>
+  <body>
+    <!-- External Links -->
+    <!-- a tag -Inline Elements
+         p -- Block level element
+    -->
+    <h2>External Links</h2>
+    <a href="https://www.google.com">Visit Google</a><br />
+    <hgroup>
+      <h2>Link with Target</h2>
+      <a href="https://google.com" target="_blank">Click For Google</a><br />
+      <a href="https://google.com" target="_self">Click For Google</a>
+    </hgroup>
+
+    <h2>Relative Link</h2>
+    <a href="about.html">About Page</a>
+    <p>
+      <a href="../02-headings-paragraphs/002_typography.html">Typography</a>
+    </p>
+    <!-- Internal Links -->
+    <h2>Internal Link</h2>
+    <a href="#service">Go to Service</a>
+
+    <h2>Email Links</h2>
+    <a href="mailto:info@fareenwaheed.com">Send an Email</a>
+
+    <article>
+      <h2>Understanding Links in HTML</h2>
+      <p>
+        Links are created using the <code>&lt;a&gt;</code> (anchor) tag in HTML.
+        They allow users to navigate to other pages, sections within a page, or
+        external websites.
+      </p>
+
+      <h3>Basic Syntax</h3>
+      <p>
+        The anchor tag requires an <code>href</code> attribute, which holds the
+        destination URL:
+      </p>
+
+      <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+      <h3 id="service">Services</h3>
+      <dl>
+        <dt>Absolute URL</dt>
+        <dd>
+          A full URL that links to an external site (e.g., https://example.com).
+        </dd>
+
+        <dt>Relative URL</dt>
+        <dd>Links to a page within the same website (e.g., /about.html).</dd>
+
+        <dt>Email Link</dt>
+        <dd>
+          Uses <code>mailto:</code> to open the user's email client (e.g.,
+          <code>&lt;a href="mailto:info@example.com"&gt;</code>).
+        </dd>
+      </dl>
+
+      <h3>Best Practices</h3>
+      <ul>
+        <li>Use descriptive link text (avoid “click here”).</li>
+        <li>
+          Add <code>target="_blank"</code> for links that open in a new tab.
+        </li>
+        <li>
+          Use <code>rel="noopener noreferrer"</code> for security when using
+          <code>target="_blank"</code>.
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>
