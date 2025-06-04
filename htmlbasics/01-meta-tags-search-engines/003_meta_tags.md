@@ -8,12 +8,12 @@
 
 ### Attributes
 
-| Attribute  |  Value   |   Description |
-| ---------- | -------- |:-------------:|
-|   charset |   character_set| Specifies the character encoding for the HTML document|
-|content| text| Specifies the value associated with the http-equiv or name attribute   |
-|   http-equiv  | content-security-policy<br>content-type<br>default-style<br>refresh |    Provides an HTTP header for the information/value of the content attribute   |
-|   name    | application-name<br>author<br>description<br>generator<br>keywords<br>viewport| Specifies a name for the metadata|
+| Attribute  | Value                                                                          |                                Description                                 |
+| ---------- | ------------------------------------------------------------------------------ | :------------------------------------------------------------------------: |
+| charset    | character_set                                                                  |           Specifies the character encoding for the HTML document           |
+| content    | text                                                                           |    Specifies the value associated with the http-equiv or name attribute    |
+| http-equiv | content-security-policy<br>content-type<br>default-style<br>refresh            | Provides an HTTP header for the information/value of the content attribute |
+| name       | application-name<br>author<br>description<br>generator<br>keywords<br>viewport |                     Specifies a name for the metadata                      |
 
 ### <u>Examples</u>
 
@@ -56,10 +56,10 @@ Setting the viewport to make your website look good on all devices:
 #### The Unicode Character Sets
 
 - Unicode can be implemented by different character sets. The most commonly used encodings are UTF-8 and UTF-16:
-|Character-set | Description|
-|---------|:-----------:|
-|   UTF-8   |   A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages    |
-|   UTF-16  | 16-bit Unicode Transformation Format is a variable-length character encoding for Unicode, capable of encoding the entire Unicode repertoire. UTF-16 is used in major operating systems and environments, like Microsoft Windows, Java and .NET.   |
+  |Character-set | Description|
+  |---------|:-----------:|
+  | UTF-8 | A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages |
+  | UTF-16 | 16-bit Unicode Transformation Format is a variable-length character encoding for Unicode, capable of encoding the entire Unicode repertoire. UTF-16 is used in major operating systems and environments, like Microsoft Windows, Java and .NET. |
 
 - The first 128 characters of Unicode (which correspond one-to-one with ASCII) are encoded using a single octet with the same binary value as ASCII, making valid ASCII text valid UTF-8-encoded Unicode as well.
 
@@ -76,7 +76,7 @@ Setting the viewport to make your website look good on all devices:
 #### Example
 
 ```html
-<meta charset="ISO-8859-1">
+<meta charset="ISO-8859-1" />
 ```
 
 - The Difference Between Unicode and UTF-8
@@ -92,7 +92,7 @@ Setting the viewport to make your website look good on all devices:
 
 - Encoding is how these numbers are translated into binary numbers to be stored in a computer:
 
-- UTF-8 encoding will store "hello" like this (binary): 01101000 01100101 01101100 01101100  01101111
+- UTF-8 encoding will store "hello" like this (binary): 01101000 01100101 01101100 01101100 01101111
 
 - Encoding translates numbers into binary. Character sets translates characters to numbers.
 
@@ -100,8 +100,8 @@ Setting the viewport to make your website look good on all devices:
 
 1. The viewport is the user's visible area of a web page.
 1. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
-1.Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
-1.Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+   1.Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+   1.Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
 
 This was not perfect!! But a quick fix.
 
@@ -109,10 +109,10 @@ This was not perfect!! But a quick fix.
 
 - HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
 
-- You should include the following ```<meta>``` viewport element in all your web pages:
+- You should include the following `<meta>` viewport element in all your web pages:
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 - This gives the browser instructions on how to control the page's dimensions and scaling.
@@ -122,5 +122,35 @@ This was not perfect!! But a quick fix.
 - The **initial-scale=1.0** part sets the initial zoom level when the page is first loaded by the browser.
 
 ```html
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 ```
+
+## 🔹 What is Open Graph?
+
+The prefix og: in HTML meta tags stands for Open Graph.
+
+Open Graph is a protocol developed by Facebook to enable any web page to become a rich social object—meaning, when your link is shared on platforms like Facebook, Twitter, LinkedIn, etc., the shared link will include a title, image, and description, just like a proper social media post.
+
+```html
+<meta
+  property="og:image"
+  content="https://developer.mozilla.org/mdn-social-share.png"
+/>
+```
+
+-Tells platforms what image to display when your page is shared.
+
+```html
+<meta property="og:description" content="...description..." />
+```
+
+- Provides a short description of the page content.
+
+| Property         | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `og:title`       | Title of your page                          |
+| `og:description` | A brief description of the content          |
+| `og:image`       | URL of the image to show in the preview     |
+| `og:url`         | Canonical URL of the page                   |
+| `og:type`        | Type of object (e.g., `website`, `article`) |
+| `og:site_name`   | Name of your website                        |
