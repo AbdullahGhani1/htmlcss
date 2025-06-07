@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line Break, Horizontal Rule & Entities</title>
+  </head>
+  <body>
+    <h1>Line Break, Horizontal Rule & Entities</h1>
+
+    <!-- Line Breaks -->
+    <p>Hello<br />World</p>
+
+    <!-- Horizontal Rules -->
+    <p>This is the first Paragraph</p>
+    <hr />
+    <p>This is the second Paragraph</p>
+
+    <!-- pre tah -->
+    <pre>
+        In a file so blank, our journey starts,
+        With HTML, we craft the parts.
+        CSS then paints with flair and grace,
+        Giving soul and style to every space.
+
+        JavaScript brings the logic in,
+        Events and loops, the browser’s twin.
+        Then TypeScript steps with structure tight,
+        Errors caught before first byte.
+
+        React mounts views in virtual trees,
+        With Motion smooth like ocean breeze.
+        Three.js draws with depth and light,
+        A 3D world in canvas bright.
+
+        Next.js serves with static might,
+        SSG and SSR unite.
+        Git records our every change,
+        In GitHub Actions, builds arrange.
+
+        Node.js runs server side,
+        APIs and routes that never hide.
+        Microservices take their shape,
+        Scaling wide, no need to scrape.
+
+        Pub/Sub whispers message flows,
+        WebRTC — real-time it goes.
+        Databases stand firm and deep,
+        Where secrets, logs, and records sleep.
+
+        MongoDB — no schema tight,
+        PostgreSQL — with joins done right.
+        Redis stores at lightning pace,
+        In cache we trust, no time to waste.
+
+        Nginx reverse-proxy king,
+        Balancing loads like it’s nothing.
+        Docker builds in boxed delight,
+        Environments match by day or night.
+
+        Kubernetes charts the course,
+        Orchestrates with cloud-like force.
+        Terraform writes the earth in code,
+        Infrastructure in versioned load.
+
+        Ansible plays with config cheer,
+        Machines obey when it draws near.
+        SonarQube checks if code is clean,
+        Keeps the bugs out, sleek and lean.
+
+        And Kafka streams the data queue,
+        Pipelines fly as packets flew.
+        From front to back, through stack so vast,
+        The full-stack dev builds things to last.
+      </pre
+    >
+
+    <!-- Computer code -->
+    <code> &lt;?php echo 'Hello'?&gt; </code>
+    <p>Save the file by parsing <kbd>Ctrl + s</kbd></p>
+
+    <!-- HTML Entities  -->
+    <!-- 
+    - &gt; for >
+    - &lt; for <
+    - &amp; for &
+    - &quot; for "
+    - &apos; for '
+    - &nsbp; for Non-breaking space
+    - &ensp; En space	0.5 em	Half the width of an em; used for moderate spacing.
+    &emsp;	Em space	1 em	Equal to the width of the current font size; often used to simulate tab spaces.
+    &copy; for ©
+    &reg; for ®
+    Currency Symbols
+    &#36; for $
+    &#162; &cent; for ¢
+    &#8364; &euro; for €
+    &#163; &pound; for £
+    Card
+    &#9824; for ♠
+    &#9827; for ♣
+    &#9829; for ♥
+    &#9830; for ♦  
+    -->
+
+    <!-- NonBreaking Space -->
+    <p>Hello, my name is&nbsp;Abdullah&nbsp;Ghani</p>
+    <!-- Greater than less than -->
+    <p>5 &gt; 2</p>
+    <p>5 &#62; 2</p>
+    <p>2 &lt; 5</p>
+    <p>2 &#60; 5</p>
+    َ
+
+    <!-- Copyright -->
+    <p>&copy;</p>
+    <p>&reg;</p>
+    <footer>
+      Copyright &copy;
+      <span id="year"></span>&nbsp;All rights reserved. &reg;
+    </footer>
+
+    <!-- Currency -->
+    <p>&cent;</p>
+    <p>&euro;</p>
+    <p>&pound;</p>
+    <p>&dollar;</p>
+    <!--  Suits -->
+    <p>&spades;</p>
+    <p>&clubs;</p>
+    <p>&hearts;</p>
+    <p>&diams;</p>
+  </body>
+  <script>
+    const currentYear = document.querySelector("#year");
+    year.textContent = new Date().getFullYear();
+  </script>
+</html>
