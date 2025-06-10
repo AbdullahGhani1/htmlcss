@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Boxes & Textarea</title>
+  </head>
+  <body>
+    <h1>Form - Select Boxes & Textarea</h1>
+    <form>
+      <label for="product">Product</label><br />
+      <select name="product" id="product" multiple size="4">
+        <option value="iphone">IPhone</option>
+        <option value="imac">IMac</option>
+        <option value="mac-mini">Mac Mini</option>
+        <option value="macbook-pro" selected>Macbook Pro</option>
+      </select>
+      <br />
+      <br />
+      <label for="message">Message</label><br />
+      <textarea
+        cols="12"
+        rows="10"
+        id="message"
+        name="message"
+        placeholder="Enter your Note"
+      ></textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
