@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM - Text Inputs</title>
+  </head>
+  <body>
+    <h1>Text Inputs</h1>
+    <form action="#" method="post">
+      <label for="name">Name</label><br />
+      <input
+        required
+        id="name"
+        type="text"
+        minlength="3"
+        placeholder="Your Full Name"
+      /><br />
+      <label for="email">Email</label><br />
+      <input
+        required
+        id="email"
+        type="email"
+        placeholder="example@email.com"
+      /><br />
+      <label for="password">Password</label><br />
+      <input
+        required
+        id="password"
+        minlength="6"
+        type="password"
+        placeholder="Enter password"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
