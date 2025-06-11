@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist</title>
+  </head>
+  <body>
+    <h1>DataList</h1>
+    <form>
+      <!-- General List select -->
+      <label for="favLanguage">Favorite Programming Languages</label>
+      <input list="languages" name="favLanguage" id="favLanguage" />
+      <datalist id="languages">
+        <option value="Javascript"></option>
+        <option value="Typescript"></option>
+        <option value="GoLang"></option>
+        <option value="PHP"></option>
+        <option value="C#"></option>
+        <option value="Java"></option>
+        <option value="Python"></option>
+      </datalist>
+      <br />
+      <br />
+      <!-- Time -->
+      <input type="submit" name="submit" value="submit" />
+    </form>
+  </body>
+</html>
