@@ -1,0 +1,76 @@
+/* . is For Class
+# for ids */
+
+/* Body Styling , Global styling*/
+/* Element Selectors */
+body {
+  background-color: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Type Selectors */
+h2 {
+  color: rgb(201, 35, 35);
+  font-size: 1.3rem;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* class selector */
+
+.sporty {
+  color: #ff3b30;
+}
+.casual {
+  color: #d6a75d;
+}
+.formal {
+  color: #2c2c2c;
+}
+.primary-heading {
+  color: red;
+}
+
+/* ID Selectors */
+#container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+#welcome {
+  background-color: #f4f4f4;
+}
+#about {
+  color: #fff;
+}
+
+/* multiple Selectors */
+.sporty,
+.casual {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4rem;
+}
+#welcome,
+#about {
+  padding: 10px;
+  color: #2c2c2c;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Descendant Styles */
+#container p {
+  color: white;
+  padding: 12px 6px;
+  border-radius: 6px;
+  background-color: rgb(66, 66, 255);
+}
+
+/* nested Selectors */
+#welcome p {
+  font-size: 20px;
+}
