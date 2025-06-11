@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Elements</title>
+  </head>
+  <body>
+    <h1>Global Elements</h1>
+    <button disabled title="i am disabled no haptic feedback">
+      Try to click me
+    </button>
+
+    <!-- edit -->
+    <p contenteditable="true">Lorem, ipsum.</p>
+
+    <!-- autofocus -->
+    <input
+      type="text"
+      name="Full name"
+      autofocus
+      placeholder="Enter your full name"
+    />
+    <br /><br />
+
+    <!-- accesskey & title
+    control ⌃ + option ⌥ + shift ⇧ + key
+    -->
+
+    <button
+      title="Home Button"
+      accesskey="h"
+      onclick="alert('Home Button Clicked')"
+    >
+      Home
+    </button>
+
+    <!-- tabindex -->
+    <button tabindex="3">Button 1</button>
+    <button tabindex="1">Button 2</button>
+    <button tabindex="2">Button 3</button>
+
+    <!-- draggable -->
+
+    <div draggable="true">This is a draggable div</div>
+  </body>
+</html>
