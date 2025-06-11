@@ -1,4 +1,7 @@
 .vscode
 .DS_Store
 
+# Ignore video files
 *.mp4
+*.mov
+*.avi
