@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-weight: 700;
+  word-spacing: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-style: normal;
+  text-indent: 0.5rem;
+  letter-spacing: 2px;
+  font-variant: normal;
+  text-transform: capitalize;
+  /* font: italic small-caps 700 1.4rem "Poppins"; */
+}
+a {
+  text-decoration: none;
+}
