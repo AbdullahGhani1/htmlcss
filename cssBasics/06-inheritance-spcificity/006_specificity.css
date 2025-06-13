@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .container h1 {
+  color: green;
+} */
+
+#heading {
+  color: yellowgreen;
+}
+.heading {
+  color: #000;
+}
+
+h1 {
+  color: red;
+}
+
+/* duplicate style latest one have higher specificity */
+h1 {
+  color: blue;
+}
